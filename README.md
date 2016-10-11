@@ -33,6 +33,6 @@ You need to change the restAPI URL and the username and password in the sendMess
 
 The program requires the G4P library. (in processing3: Sketch->Import library..->Add library.., search for "G4P")
 
-To run it on a raspberry I recomend looking using the "Upload to PI" tool. (in processing3: tools->add tool, search for "upload to pi")
+To run it on a raspberry I recomend using the "Upload to PI" tool. (in processing3: tools->add tool, search for "upload to pi")
 
 This program has been tested on raspberry PI3 and windows.
