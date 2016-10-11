@@ -1,0 +1,108 @@
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" modelBaseVersion="2">
+  <exchange>
+    <supplierIdentification>
+      <country>no</country>
+      <nationalIdentifier>Norwegian Public Roads Administration</nationalIdentifier>
+    </supplierIdentification>
+  </exchange>
+  <payloadPublication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SituationPublication" lang="nob">
+    <publicationTime>
+%createtime%
+</publicationTime>
+    <publicationCreator>
+      <country>no</country>
+      <nationalIdentifier>Norwegian Public Roads Administration</nationalIdentifier>
+    </publicationCreator>
+    <situation version="1" id="%id%">
+      <overallseverity>
+low
+</overallseverity>
+      <headerinformation>
+        <confidentiality>
+noRestriction
+</confidentiality>
+        <informationstatus>
+test
+</informationstatus>
+        <urgency>
+normalUrgency
+</urgency>
+      </headerinformation>
+      <situationrecord xsi:type="MaintenanceWorks" version="1" id="%id%_1">
+        <situationrecordcreationtime>
+%createtime%
+</situationrecordcreationtime>
+        <situationrecordversiontime>
+%nowtime%
+</situationrecordversiontime>
+        <probabilityofoccurrence>
+certain
+</probabilityofoccurrence>
+        <validity>
+          <validitystatus>
+definedByValidityTimeSpec
+</validitystatus>
+          <validitytimespecification>
+            <overallstarttime>
+%createtime%
+</overallstarttime>
+            <overallendtime>
+%endtime%
+</overallendtime>
+          </validitytimespecification>
+        </validity>
+        <generalpubliccomment>
+          <comment>
+            <values>
+              <value>
+Maintenance work on road.
+</value>
+            </values>
+          </comment>
+          <commenttype>
+description
+</commenttype>
+        </generalpubliccomment>
+        <groupOfLocations xsi:type="ItineraryByIndexedLocations">
+        <locationContainedInItinerary index="0">
+        <location xsi:type="Point">
+        <pointByCoordinates>
+        <pointCoordinates>
+        <latitude>%lat%</latitude>
+        <longitude>%lon%</longitude>
+        </pointCoordinates>
+        </pointByCoordinates>
+        </location>
+        </locationContainedInItinerary>
+        <locationContainedInItinerary index="1">
+        <location xsi:type="Linear">
+        <linearExtension>
+        <extendedLinear>
+        <linearByCoordinates>
+        <start>
+        <latitude>%lat%</latitude>
+        <longitude>%lon%</longitude>
+        </start>
+        <intermediate index="1">
+        <pointCoordinates>
+        <latitude>%lat%</latitude>
+        <longitude>%lon%</longitude>
+        </pointCoordinates>
+        </intermediate>
+        <end>
+        <latitude>%lat%</latitude>
+        <longitude>%lon%</longitude>
+        </end>
+        </linearByCoordinates>
+        </extendedLinear>
+        </linearExtension>
+        </location>
+        </locationContainedInItinerary>
+        </groupOfLocations>
+        <roadMaintenanceType>
+maintenanceWork
+</roadMaintenanceType>
+      </situationrecord>
+    </situation>
+  </payloadPublication>
+</d2LogicalModel>
