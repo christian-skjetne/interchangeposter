@@ -27,6 +27,8 @@ else if(msgType.equals("vehicleobstruction"))
 ```
 The AMQP client and restAPI code will hopefully be available on github soon.
 
+You need to change the restAPI URL and the username and password in the sendMessage() method in interchangeposter.pde to the appropriate settings for your server.
+
 ## Usage notes
 
 The program requires the G4P library. (in processing3: Sketch->Import library..->Add library.., search for "G4P")
